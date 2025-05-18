@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dish Decider</string>
+    <string name="close_button_desc">Close information screen</string>
+    <string name="info_button_desc">Open information screen</string>
+
+</resources>

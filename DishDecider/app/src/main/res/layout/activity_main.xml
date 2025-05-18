@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbg"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/ingredientsButton"
+        android:layout_width="111dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#00000000"
+        android:text="Ingredients"
+        android:textAlignment="center"
+        android:textColor="#442A00"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:strokeColor="#442A00"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/MealButton"
+        android:layout_width="117dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#00000000"
+        android:text="Meal Type"
+        android:textAlignment="center"
+        android:textColor="#442A00"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.301"
+        app:strokeColor="#442A00"
+        app:strokeWidth="1sp" />
+
+    <Button
+        android:id="@+id/FindButton"
+        android:layout_width="95dp"
+        android:layout_height="47dp"
+        android:backgroundTint="#442A00"
+        android:text="Find Recipe"
+        android:textAlignment="center"
+        android:textColor="#FFFF"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.299" />
+
+    <ImageButton
+        android:id="@+id/infoButton"
+        android:layout_width="57dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#00FBFBFB"
+        android:contentDescription="@string/info_button_desc"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/information" />
+
+    <!-- Dish Image -->
+    <!-- Dish Title -->
+    <!-- Dish Description -->
+
+    <ImageView
+        android:id="@+id/dishImage"
+        android:layout_width="388dp"
+        android:layout_height="283dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548" />
+
+    <TextView
+        android:id="@+id/dishTitle"
+        android:layout_width="346dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="3dp"
+        android:fontFamily="@font/bebas_neue"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishImage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/dishDescription"
+        android:layout_width="356dp"
+        android:layout_height="120dp"
+        android:fontFamily="@font/open_sans_light"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dishTitle"
+        app:layout_constraintVertical_bias="0.111" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
