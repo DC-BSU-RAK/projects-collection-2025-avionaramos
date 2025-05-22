@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jobseekerapplicationform"
+    tools:context=".JobSeekerApplicationActivity">
+
+    <ImageButton
+        android:id="@+id/previousButton10"
+        android:layout_width="63dp"
+        android:layout_height="33dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038"
+        app:srcCompat="@drawable/backbutton" />
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="517dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.808">
+
+        <EditText
+            android:id="@+id/fullNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Full Name"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/phoneNumberInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Phone Number"
+            android:inputType="phone"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000" />
+
+        <EditText
+            android:id="@+id/nationalityInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Nationality"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/emiratesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Emirates"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/currentJobTitleInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Job Role"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/yearsOfExperienceInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Years of Experience"
+            android:inputType="number"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/noticePeriodInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Notice Period"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/expectedSalaryInput"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="Expected Salary"
+            android:inputType="number"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/linkedinUrlInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/open_sans_medium"
+            android:hint="LinkedIn Profile URL"
+            android:inputType="textUri"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+
+        <EditText
+            android:id="@+id/messageToRecruiterInput"
+            android:layout_width="370dp"
+            android:layout_height="67dp"
+            android:fontFamily="@font/open_sans_medium"
+            android:gravity="top"
+            android:hint="Message to Recruiter"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColor="#082F57"
+            android:textColorHint="#A6000000"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/candidateregButton"
+        android:layout_width="163dp"
+        android:layout_height="54dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:srcCompat="@drawable/submitbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

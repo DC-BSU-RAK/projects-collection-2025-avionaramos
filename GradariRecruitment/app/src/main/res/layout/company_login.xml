@@ -1,0 +1,59 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signincompany"
+    tools:context=".CompanyLoginActivity">
+
+    <EditText
+        android:id="@+id/companyNameEditText"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:background="@null"
+        android:hint="Enter your company name"
+        android:inputType="text"
+        android:textColor="#082f58"
+        android:textColorHint="#61FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.524" />
+
+    <EditText
+        android:id="@+id/companyEmailEditText"
+        android:layout_width="290dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="84dp"
+        android:background="@null"
+        android:hint="Enter your company email"
+        android:inputType="textEmailAddress"
+        android:textColor="#082f58"
+        android:textColorHint="#61FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyNameEditText"
+        app:layout_constraintVertical_bias="0.165" />
+
+    <ImageButton
+        android:id="@+id/signinButton"
+        android:layout_width="316dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="172dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.907"
+        app:srcCompat="@drawable/signbutton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

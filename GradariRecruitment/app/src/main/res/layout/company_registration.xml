@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/companyregistrationform"
+    tools:context=".CompanyRegistrationActivity">
+
+    <!-- First Name -->
+
+    <EditText
+        android:id="@+id/firstNameField"
+        android:layout_width="391dp"
+        android:layout_height="54dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="First Name"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.282" />
+
+    <EditText
+        android:id="@+id/phoneField"
+        android:layout_width="393dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/emailField" />
+
+    <EditText
+        android:id="@+id/companyNameField"
+        android:layout_width="396dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="Company Name"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/phoneField" />
+
+    <EditText
+        android:id="@+id/emailField"
+        android:layout_width="392dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lastNameField" />
+
+    <EditText
+        android:id="@+id/messageField"
+        android:layout_width="393dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:gravity="top"
+        android:hint="How can we help you?"
+        android:inputType="textMultiLine"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jobTitleField"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/jobTitleField"
+        android:layout_width="394dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="Your Job Title"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/companyNameField" />
+
+    <EditText
+        android:id="@+id/lastNameField"
+        android:layout_width="392dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/open_sans_medium"
+        android:hint="Last Name"
+        android:padding="12dp"
+        android:textColor="#082F57"
+        android:textColorHint="#A6000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/firstNameField" />
+
+    <ImageButton
+        android:id="@+id/previousButton4"
+        android:layout_width="31dp"
+        android:layout_height="30dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/backbutton" />
+
+    <ImageButton
+        android:id="@+id/companyregButton"
+        android:layout_width="154dp"
+        android:layout_height="70dp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/submitbutton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
